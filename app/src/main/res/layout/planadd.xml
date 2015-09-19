@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ivory">
+
+    <FrameLayout
+            android:id="@+id/planadd_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_title_height"
+            android:background="@color/royalblue">
+
+        <Button
+                android:id="@+id/planadd_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/royalblue"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="取消"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="添加日计划"
+                android:textColor="@color/ivory"
+                android:textSize="@dimen/textview_textsize_large"/>
+        <!--<Button-->
+        <!--android:id="@+id/planadd_add_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@color/royalblue"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:text="添加"/>-->
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_below="@+id/planadd_head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+        <EditText android:id="@+id/planadd_details"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:hint="计划内容"
+                  android:textColor="@color/black"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button android:id="@+id/planadd_starttime_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"/>
+            <TextView android:id="@+id/planadd_starttime_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:text="@string/add"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <Button android:id="@+id/planadd_endtime_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"/>
+            <TextView android:id="@+id/plandd_endtime_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:text="@string/add"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/planadd_save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
